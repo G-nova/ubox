@@ -1,0 +1,56 @@
+
+Ubox Fields
+===========
+
+ 
+General group_ubox_general
+--------------------------
+ 
+* field_ubox_title: Titre à afficher
+* field_ubox_header_link: Header link
+* field_ubox_footer_link: Footer link
+ 
+
+Content group_ubox_content
+--------------------------
+
+* field_ubox_content: Mode de sélection de contenu
+* group_ubox_content_custom: Custom
+	* field_ubox_content_custom: Custom Text
+	* group_ubox_content_existing: Existing content  
+    	* field_ubox_content_existing: Contenu existant
+    * group_ubox_content_search: Search   
+    	* field_ubox_search_filters: Filtres (field_collection)
+    		* field_ubox_filter_type: Content type
+    		* field_ubox_filter_terms: Taxonomy
+    		* field_ubox_filter_exclude: Exclude
+    		* field_ubox_filter_expose: Expose
+    	* field_ubox_search_limit: Items number
+    	* field_ubox_search_pager: Pagination  
+
+
+Display group_ubox_display
+--------------------------
+
+* field_ubox_display_region: Ubox area
+* field_ubox_display_weight: Poids 
+* field_ubox_display_pages: Url des pages              
+* field_ubox_display_notpages: Ne pas afficher sur les pages aux url 
+
+
+Format  group_ubox_template
+---------------------------
+
+* field_ubox_template: Format
+* field_ubox_template_size: Taille de la box
+* field_ubox_template_count: Grouper par
+
+
+Admin group_ubox_admin
+----------------------
+
+* field_ubox_query_alter: Query alter 
+
+
+
+

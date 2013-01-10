@@ -1,0 +1,66 @@
+<?php
+/**
+ * @file
+ * Code for the Features Contenu de redirection feature.
+ */
+
+include_once('features_redirect_content.features.inc');
+
+
+
+
+
+/**
+ * Implements hook_node_view().
+ */
+function features_redirect_content_node_view($node, $view_mode, $langcode) {
+
+  /*
+   * Modification des liens de réservation fournis dans les Ubox
+   * */
+  if ($node->type == 'redirect_content') {
+    if (isset($node->field_link) && $node->field_link['und'][0]['url']) {
+      $url = explode('/',$node->field_link['und'][0]['url']);
+      if ('online.citybreak.com' == $url[2]) {
+        // Unset first url items to only get url after domain name
+        $path = $url;
+        unset($path[0]);
+        unset($path[1]);
+        unset($path[2]);
+        if(!empty($path)) {
+          $path = implode('/', $path);
+        }
+        else {
+          $path = '';
+        }
+        $node->field_link['und'][0]['url'] = 'reservation/' . $path;
+        $node->field_link['und'][0]['display_url'] = url($node->field_link['und'][0]['url'] ,array('absolute' => TRUE, 'query' => $node->field_link['und'][0]['query']));
+      }
+    }
+
+    if('ubox_' == substr($view_mode, 0, 5)){
+      _ubox_node_view_uboxitem($node,  $view_mode, $langcode);
+
+      // Sometimes, display_url is bad and contain ...
+      // Very strange so check it in case of...
+      if(strpos($node->field_link['und'][0]['display_url'], '...') !== false) {
+        $node->field_link['und'][0]['display_url'] = url($node->field_link['und'][0]['url'], array('absolute' => TRUE, 'query' => $node->field_link['und'][0]['query']));
+      }
+      
+      // Change links to redirect urls
+      $node->content['title']['#items'][0]['value'] = preg_replace('/href="[^"]+"/', $node->field_link['und'][0]['display_url'], $node->content['title']['#items'][0]['value']);
+      $node->content['title'][0]['#markup'] = preg_replace('/href="[^"]+"/', 'href="' . $node->field_link['und'][0]['display_url'] . '"', $node->content['title'][0]['#markup']);
+      $node->content['field_vignette'][0]['#path']['path'] = $node->field_link['und'][0]['url'];
+      $urls = explode('#', $node->field_link['und'][0]['display_url']);
+      $queries = $node->field_link['und'][0]['query'];
+      $anchor = '';
+      if(isset($urls[1])) {
+        $anchor = $urls[1];
+      }
+
+      $node->content['field_vignette'][0]['#path']['options'] = array('query' => $queries, 'fragment' => $anchor);
+
+    }
+
+  } // node->type == redirect_content
+} // features_redirect_content_node_view

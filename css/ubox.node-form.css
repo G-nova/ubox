@@ -1,0 +1,33 @@
+.node-ubox-form {}
+
+/* Horizontal tabs */
+.node-ubox-form .horizontal-tabs ul.horizontal-tabs-list li:focus {background:#eee;outline:none;}
+.node-ubox-form .horizontal-tabs ul.horizontal-tabs-list li.selected {background:#fff;}
+
+/* content mode selection */
+.field-name-field-ubox-content {}
+.field-name-field-ubox-content .form-item.form-type-radio {display:inline-block;margin-right:1em;}
+
+/* filters */
+#edit-field-ubox-search-filters {}
+  .field-name-field-ubox-filter-type {
+    display: inline-block;
+    width:25%;
+    vertical-align: top;
+  }
+  .field-name-field-ubox-filter-terms {
+    display: inline-block;
+    width:25%;
+    vertical-align: top;
+  }
+  .group-ubox-filter-settings {
+    display: inline-block;
+    width:25%;
+    vertical-align: top;
+  }
+  .field-name-field-ubox-filter-exclude {margin-bottom:1em;}
+  .field-name-field-ubox-filter-expose {}
+  #edit-field-ubox-search-filters table .form-submit {display:block;float:right;margin:1em;}
+
+/* error on checkbox */
+.form-checkbox.error + label {color:red;font-weight:bold;}

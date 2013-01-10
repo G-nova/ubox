@@ -1,0 +1,55 @@
+<?php
+
+/**
+ * Implemenation of hook_install().
+ */
+function ubox_install() {
+
+} // ubox_install
+
+
+/**
+ * Implemenation of hook_enable().
+ */
+function ubox_enable() {
+  // Stolen from commerce_kickstart features (commerce_kickstart_blog.install)
+  // Rebuild the features static caches.
+  features_include(TRUE);
+  // Refresh some part of our feature.
+  $items['ubox'][] = 'field';
+  $items['ubox'][] = 'field_group';
+  /**
+  * Other possibilities:
+  * ctools, features_api, field, field_group, filter, language, menu_custom
+  * menu_links, node, og_feature_permission, taxonomy, user_permission
+  * variable, views_view, wysiwyg, ...
+  */
+  _features_restore('enable', $items);
+  _features_restore('rebuild', $items);
+
+} // ubox_enable
+
+
+
+/**
+ * Implemenation of hook_uninstall().
+ */
+function ubox_uninstall() {
+  // Delete variables
+  db_query("DELETE FROM {variable} WHERE name LIKE 'ubox%'");
+
+  // Delete blocks
+  db_query("DELETE FROM {block} WHERE module = 'ubox'");
+} // ubox_uninstall
+
+
+/**
+ * Implements hook_update_N
+ */
+function ubox_update_7009() {
+
+  // Remove unused table
+  db_drop_table('ubox_area');
+  
+} // ubox_update_7009
+

@@ -1,0 +1,10 @@
+.ubox {
+  display:inline-block;
+  vertical-align: top;
+}
+
+/* Default style for ubox sizes */ 
+.ubox-size-1-1 {width:100%;}
+.ubox-size-1-2 {width:50%;}
+.ubox-size-1-3 {width:33%;}
+.ubox-size-2-3 {width:66%;}

@@ -1,0 +1,184 @@
+
+msgid ""
+msgstr ""
+
+msgid "Content Type"
+msgstr "Type de contenu"
+
+msgid "Select wich content type can be display in ubox"
+msgstr "Selectionnez quels types de contenu peuvent être affichés dans les ubox"
+
+msgid "Content Types"
+msgstr "Types de contenu"
+
+msgid "Taxonomy"
+msgstr ""
+
+msgid "Select wich taxonomy can be display in ubox"
+msgstr "Selectionnez quels vocabulaires peuvent être affichés dans les ubox"
+
+msgid "Ubox name"
+msgstr "Nom de l'ubox"
+
+msgid "Ensure that each ubox area title is unique."
+msgstr ""
+
+msgid "The ubox area has been created."
+msgstr "L'Ubox area a été crée."
+
+msgid "Are you sure you want to delete the \"%name\" ubox area?"
+msgstr ""
+
+msgid "The ubox area \"%name\" has been removed."
+msgstr ""
+
+msgid "Contenu existant"
+msgstr ""
+
+msgid "Custom Text"
+msgstr "Texte personnalisé"
+
+msgid "Emplacement box"
+msgstr ""
+
+msgid "Exclude"
+msgstr "Exclure"
+
+msgid "Expose"
+msgstr "Exposer"
+
+msgid "Expose only"
+msgstr ""
+
+msgid "Filtres"
+msgstr ""
+
+msgid "Footer link"
+msgstr "Lien de pied de page"
+
+msgid "Format"
+msgstr ""
+
+msgid "Grouper par"
+msgstr ""
+
+msgid "Header link"
+msgstr "Lien d'entête"
+
+msgid "Items number limit"
+msgstr "Limite du nombre d'elements"
+
+msgid "Lister l'url des pages où cette box doit être affichée.\nUne URL par ligne.\nLaisser vide pour afficher la box sur toutes les pages.\nSaisir <front> pour la page d'accueil."
+msgstr ""
+
+msgid "Lister les urls des pages où cette box ne doit pas apparaitre.\nUne url par ligne.\nLaisser vide pour ne pas restreindre l'affichage des boxs.\nSaisir <front> pour la page d'accueil."
+msgstr ""
+
+msgid "Mode de sélection de contenu"
+msgstr ""
+
+msgid "Ne pas afficher sur les pages aux url"
+msgstr ""
+
+msgid "Object $query is available (EntityFieldQuery). Do not write php tags."
+msgstr ""
+
+msgid "Pagination"
+msgstr ""
+
+msgid "Poids de la box pour ordonner l'affichage des différentes boxs dans une région."
+msgstr ""
+
+msgid "Query alter"
+msgstr ""
+
+msgid "Set limit number of items loaded. Display pager"
+msgstr ""
+
+msgid "Sélectionner l'emplacement de box où la box sera affichée"
+msgstr ""
+
+msgid "Sélectionner la taille de la box a afficher dans l'espace"
+msgstr ""
+
+msgid "Sélectionner par combien les contenus doivent être regroupés. (mode diaporama)"
+msgstr ""
+
+msgid "Taille de la box"
+msgstr ""
+
+msgid "Titre à afficher"
+msgstr ""
+
+msgid "Types de contenu"
+msgstr ""
+
+msgid "Une pagination doit-elle être utilisée ?"
+msgstr ""
+
+msgid "Url des pages"
+msgstr ""
+
+msgid "Weight"
+msgstr "Poids"
+
+msgid "When checked, results appears only when using exposed filters."
+msgstr ""
+
+msgid "﻿﻿Permet de définir les filtres de recherche automatique (type de contenu et taxonomie)\nFiltre sur un élément OU un autre élément.\nAu sein du même élément, on filtre sur le(s) type(s) de contenu sélectionné(s) ET sur la taxonomie.\nNous avons donc :\nÉlément 01 : (Type de contenu 1 OU type de contenu 2) ET (Terme 1 ou Terme 2)\nOU Élément 02 : (Type de contenu 2 OU type de contenu 3) ET (Terme 3)\n=> Un contenu de Type de contenu 1 et de Terme 3 ne sera pas affiché.\nUn contenu de Type de contenu 2 et de Terme 2 sera affiché."
+msgstr ""
+
+msgid "Userfriendly box"
+msgstr ""
+
+msgid "Easily make box with differents templates and automaticals are manuals content"
+msgstr ""
+
+msgid "Titre"
+msgstr ""
+
+msgid "No results"
+msgstr "Aucun resultats"
+
+msgid "Administer ubox area"
+msgstr ""
+
+msgid "Alter ubox search query"
+msgstr ""
+
+msgid "Have acces to the query alter field in ubox node form."
+msgstr ""
+
+msgid "Ubox"
+msgstr ""
+
+msgid "Search"
+msgstr "Rechercher"
+
+msgid "- All -"
+msgstr ""
+
+msgid "Exposed filters could not be excluded"
+msgstr ""
+
+msgid "You must have at least one exposed filter to check the 'Expose only' field."
+msgstr ""
+
+msgid "Ubox: !view_mode"
+msgstr ""
+
+msgid "Userfriendly Box"
+msgstr ""
+
+msgid "Add Ubox area"
+msgstr ""
+
+msgid "Add a new Ubox area."
+msgstr ""
+
+msgid "Delete Ubox area"
+msgstr ""
+
+msgid "Add and edit box content on easy way"
+msgstr ""
+
